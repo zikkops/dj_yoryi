@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org/face/decovar"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./css/main2.css" />
+    <title>DJ YORYI | Home Page</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header id="header-home">
+      <div class="container">
+        <nav id="main-nav">
+          <button id="index-page">
+            <img src="./img/cap logo-01.png" alt="DJ YORYI LOGO" id="logo" />
+          </button>
+          <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <a href="#" class="btn btn-sm animated-button victoria-one"
+                >ABOUT ME</a
+              >
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <a href="#" class="btn btn-sm animated-button victoria-one"
+                >MUSIC</a
+              >
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <a href="#" class="btn btn-sm animated-button victoria-one"
+                >DJ SCHOOL</a
+              >
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <a href="#" class="btn btn-sm animated-button victoria-one"
+                >CONTACT US</a
+              >
+            </div>
+          </div>
+        </nav>
+        <div id="sub-btn">
+          <h2><a href="#">JOIN OUR DJ SCHOOL</a></h2>
+        </div>
+        <img src="img/Yoryi.png" alt="DJ Yoryi" id="mid-logo" />
+        <div id="player">
+          <div id="player-cont">
+            <div id="songTitle"></div>
+            <p id="dj-name">DJ YORYI</p>
+            <div id="buttons">
+              <button id="pre" onclick="pre()">
+                <img src="Pre.png" height="90%" widt="90%" />
+              </button>
+              <button id="play" onclick="playOrPauseSong()">
+                <img id="play-btn" src="Pause.png" />
+              </button>
+              <!-- <div class="bar"></div>
+              <button id="pause" onclick="playOrPauseSong()">
+                <img src="Pause.png" />
+              </button> -->
+
+              <button id="next" onclick="next()">
+                <img src="Next.png" height="90%" width="90%" />
+              </button>
+            </div>
+            <div id="seek-bar">
+              <div id="fill"></div>
+              <div id="handle"></div>
+            </div>
+          </div>
+        </div>
+        <button id="popupbtn"></button>
+        <div id="blured-bg" class="blur-bg">
+          <div id="popupvideo" class="popup">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/fqRiqWJcess"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+  <script src="music.js"></script>
+  <script src="onclick.js"></script>
+</html>

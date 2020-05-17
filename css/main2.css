@@ -1,0 +1,500 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  margin: 0 5vw;
+}
+
+#main-nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
+  font-family: "DecovarRegular24", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px !important;
+  width: 100%;
+  height: 100%;
+}
+
+#main-nav .items .item {
+  float: left;
+  margin-right: 20px;
+  margin-top: 18px;
+}
+#main-nav .items .item .line-container {
+  position: fixed;
+  top: 20px;
+  width: 100px;
+  height: 50px;
+  z-index: 100;
+}
+#main-nav .items .item {
+  width: 100px;
+  height: 2px;
+  background-color: white;
+}
+
+#main-nav .items .item .line:hover {
+  transform: rotate(30deg);
+}
+
+#index-page {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#main-nav a.current {
+  border-color: #e02450;
+}
+.container {
+  position: fixed;
+  background: url("./img/main-dj4.jpg") top center / cover;
+  height: 100vh;
+  width: 100vw;
+}
+#logo {
+  display: inline-block;
+  width: 100px;
+  height: auto;
+}
+#sub-btn h2 {
+  display: inline-block;
+  position: fixed;
+  right: 0;
+  background-color: #e02450;
+  font-family: "DecovarRegular24", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+  width: 250px;
+  height: 40px;
+  text-align: center;
+  padding-top: 15px;
+  transform: rotate(-90deg);
+  margin-right: -100px;
+  margin-top: 240px;
+  vertical-align: middle;
+}
+#sub-btn h2 a {
+  color: white;
+  text-decoration: none;
+}
+#mid-logo {
+  display: block;
+  position: absolute;
+  width: 800px;
+  height: auto;
+  left: 20%;
+  top: 5%;
+  z-index: -4;
+}
+#player {
+  position: absolute;
+  bottom: 0;
+  width: 90vw;
+  height: 70px;
+  margin: 0 5vw;
+}
+#player-cont {
+  display: flex;
+}
+#buttons {
+  width: 180px;
+  margin-left: 150px;
+  display: flex;
+}
+
+#next,
+#pre,
+#play,
+#pause {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.bar {
+  width: 2px;
+  height: 30px;
+  background-color: #e02450;
+  transform: rotate(25deg);
+  margin-top: 10px;
+  margin-left: -10px;
+}
+#pause {
+  margin-left: -5px;
+}
+
+#seek-bar {
+  width: 450px;
+  height: 5px;
+  background-color: white;
+  display: flex;
+  border-radius: 50px;
+  margin-left: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#handle {
+  width: 4px;
+  height: 14px;
+  background-color: #e02450;
+  margin-top: -5px;
+}
+#songTitle {
+  position: absolute;
+  color: white;
+  font-family: "DecovarRegular24", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 35px;
+  height: 50px;
+  top: 0;
+}
+#dj-name {
+  position: absolute;
+  color: #e02450;
+  top: 35px;
+  left: 1px;
+  font-family: "DecovarRegular24", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  margin: 0 5vw;
+}
+#main-nav ul {
+  display: flex;
+}
+#main-nav li {
+  padding-left: 1.5rem;
+  list-style: none;
+  margin: auto 0;
+}
+#main-nav a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
+  font-family: "DecovarRegular24", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+}
+#main-nav a:hover {
+  border-color: #e02450;
+}
+#main-nav .underline {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+#index-page {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#main-nav a.current {
+  border-color: #e02450;
+}
+.container {
+  position: fixed;
+  background: url("/img/main-dj4.jpg") top center / cover;
+  height: 100vh;
+  width: 100vw;
+}
+#logo {
+  display: inline-block;
+  width: 100px;
+  height: auto;
+}
+#sub-btn h2 {
+  display: inline-block;
+  position: fixed;
+  right: 0;
+  background-color: #e02450;
+  font-family: "DecovarRegular24", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+  width: 250px;
+  height: 40px;
+  text-align: center;
+  padding-top: 15px;
+  transform: rotate(-90deg);
+  margin-right: -100px;
+  margin-top: 240px;
+  vertical-align: middle;
+}
+#sub-btn h2 a {
+  color: white;
+  text-decoration: none;
+}
+#mid-logo {
+  display: block;
+  position: absolute;
+  width: 800px;
+  height: auto;
+  left: 20%;
+  top: 5%;
+  z-index: -4;
+}
+#player {
+  position: absolute;
+  bottom: 0;
+  width: 90vw;
+  height: 70px;
+  margin: 0 5vw;
+}
+#player-cont {
+  display: flex;
+}
+#buttons {
+  width: 180px;
+  margin-left: 150px;
+  display: flex;
+}
+
+#next,
+#pre,
+#play,
+#pause {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.bar {
+  width: 2px;
+  height: 30px;
+  background-color: #e02450;
+  transform: rotate(25deg);
+  margin-top: 10px;
+  margin-left: -10px;
+}
+#pause {
+  margin-left: -5px;
+}
+
+#seek-bar {
+  width: 450px;
+  height: 5px;
+  background-color: white;
+  display: flex;
+  border-radius: 50px;
+  margin-left: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#handle {
+  width: 4px;
+  height: 14px;
+  background-color: #e02450;
+  margin-top: -5px;
+}
+#songTitle {
+  position: absolute;
+  color: white;
+  font-family: "DecovarRegular24", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 35px;
+  height: 50px;
+  top: 0;
+}
+#dj-name {
+  position: absolute;
+  color: #e02450;
+  top: 35px;
+  left: 1px;
+  font-family: "DecovarRegular24", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+}
+
+/* test */
+
+.jumbotron h1 {
+  color: #353535;
+}
+footer {
+  margin-bottom: 0 !important;
+  margin-top: 80px;
+}
+footer p {
+  margin: 0;
+  padding: 0;
+}
+span.icon {
+  margin: 0 5px;
+  color: #d64541;
+}
+h2 {
+  color: #bdc3c7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.mrng-60-top {
+  margin-top: 60px;
+}
+/* Global Button Styles */
+a.animated-button:link,
+a.animated-button:visited {
+  position: relative;
+  display: block;
+  margin: 30px auto 0;
+  padding: 14px 15px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 0.08em;
+  border-radius: 0;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+a.animated-button:link:after,
+a.animated-button:visited:after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  z-index: -1;
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover,
+a.animated-button:visited:hover {
+  color: #fff;
+  text-shadow: none;
+}
+a.animated-button:link:hover:after,
+a.animated-button:visited:hover:after {
+  height: 450%;
+}
+a.animated-button:link,
+a.animated-button:visited {
+  position: relative;
+  display: block;
+  margin: 30px auto 0;
+  padding: 7px 15px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 0;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  height: 15px !important;
+}
+
+/* Victoria Buttons */
+
+/* a.animated-button.victoria-one {
+  border: 2px solid #d24d57;
+} */
+a.animated-button.victoria-one:after {
+  background: #d24d57;
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+
+a.animated-button.victoria-four:hover:after {
+  opacity: 1;
+  height: 600% !important;
+}
+.row {
+  display: flex;
+  margin-right: 50px;
+}
+.row > div {
+  margin-left: 60px;
+  height: 25px;
+  margin-top: -19px;
+}
+
+/* popup youtube */
+#popupbtn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 100px;
+  background-image: url(/img/button.image.png);
+  background-size: 150px 100px;
+  border: none;
+  transition: all 0.4s;
+}
+#popupbtn:hover {
+  width: 250px;
+  height: 175px;
+  background-size: 250px 175px;
+  transition: all 0.4s;
+}
+.popup {
+  display: none;
+  width: 560px;
+  height: 315px;
+  margin: 150px auto;
+
+  transition: all 0.4s;
+}
+.blur-bg {
+  position: fixed;
+  top: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  transition: all 0.4s;
+}
+.visible {
+  display: block;
+  transition: all 0.4s;
+}
