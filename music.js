@@ -1,4 +1,4 @@
-var songs = ["Song2.mp3", "Song1.mp3", "Song3.mp3"];
+var songs = ["/music/Song2.mp3", "/music/Song1.mp3", "/music/Song3.mp3"];
 var poster = ["Poster1.jpg", "Poster2.jpg", "Poster3.jpg"];
 var songsName = ["EDM", "Trance", "Dubstep"];
 
@@ -21,10 +21,10 @@ function playSong() {
 function playOrPauseSong() {
   if (song.paused) {
     song.play();
-    document.getElementById("play-btn").src = "Pause.png";
+    document.getElementById("play-btn").src = "./img/icons/pause.png";
   } else {
     song.pause();
-    document.getElementById("play-btn").src = "Play.png";
+    document.getElementById("play-btn").src = "./img/icons/play.png";
   }
 }
 

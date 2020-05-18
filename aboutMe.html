@@ -13,9 +13,12 @@
     <title>DJ YORYI | Home Page</title>
   </head>
   <body id="home">
-    <div id="blur-container">
-      <!-- home page -->
-      <header id="home-page">
+    <!-- home page -->
+    <div id="bg-gradian">
+      <!-- <div class="grad-top">
+        <img src="/img/top gradian.png" alt="gradian" />
+      </div> -->
+      <header id="about-page">
         <nav id="main-nav">
           <button id="logo">
             <img
@@ -48,49 +51,12 @@
           </div>
         </nav>
         <div id="main-home">
-          <div id="center-logo">
-            <img src="/img/Yoryi.png" alt="Dj-Yoryi-Music" class="main-logo" />
-          </div>
           <button id="sub-btn">JOIN OUR DJ SCHOOL</button>
         </div>
-
-        <div id="player">
-          <div id="player-cont">
-            <div id="songTitle"></div>
-            <p id="dj-name">DJ YORYI</p>
-            <div id="buttons">
-              <button id="pre" onclick="pre()">
-                <img src="./img/icons/Pre.png" height="90%" widt="90%" />
-              </button>
-              <button id="play" onclick="playOrPauseSong()">
-                <img id="play-btn" src="./img/icons/Pause.png" />
-              </button>
-              <button id="next" onclick="next()">
-                <img src="./img/icons/Next.png" height="90%" width="90%" />
-              </button>
-            </div>
-            <div id="seek-bar">
-              <div id="fill"></div>
-              <div id="handle"></div>
-            </div>
-          </div>
-          <button id="popupbtn"></button>
-        </div>
       </header>
-    </div>
-    <div id="blured-bg" class="blur-bg">
-      <div id="popupvideo" class="popup">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/fqRiqWJcess"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+      <div class="grad-btm">
+        <!-- <img src="/img/bot gradian.png" alt="gradian" /> -->
       </div>
     </div>
   </body>
-  <script src="music.js"></script>
-  <script src="onclick.js"></script>
 </html>

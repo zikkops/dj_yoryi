@@ -1,0 +1,315 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "DECOVAR REGULAR24TERMB", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+#home {
+  overflow: hidden;
+}
+
+/* home page */
+#home-page {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: url("/img/main-dj.jpg") top center / cover;
+}
+
+/* navbar */
+#main-nav {
+  width: 80vw;
+  margin: 0 auto;
+}
+#logo {
+  height: 50px;
+  width: 100px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+#logo:hover {
+  cursor: pointer;
+}
+#logo .nav-logo {
+  height: 80px;
+}
+
+#main-home .row {
+  float: right;
+}
+
+#main-home .row ul {
+  display: flex;
+  list-style: none;
+}
+/* main - home page */
+#center-logo {
+  display: block;
+  width: 800px;
+  height: 100%;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#center-logo .main-logo {
+  width: 100%;
+}
+#sub-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #e02450;
+  color: white;
+  font-size: 22px;
+  width: 300px;
+  height: 60px;
+  text-align: center;
+  /* padding-top: 15px; */
+  transform: rotate(-90deg);
+  margin-right: -130px;
+  margin-top: 300px;
+  border: none;
+}
+#sub-btn:hover {
+  cursor: pointer;
+}
+#sub-btn h2 a {
+  color: white;
+  text-decoration: none;
+}
+
+/* PLAYER */
+#footer-main {
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  width: 100vw;
+}
+#player {
+  position: absolute;
+  bottom: 0;
+  width: 80vw;
+  height: 70px;
+  margin: 0 10vw;
+}
+#player-cont {
+  display: flex;
+}
+#buttons {
+  width: 180px;
+  margin-left: 150px;
+  display: block;
+}
+
+#next,
+#pre,
+#play,
+#pause {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+#seek-bar {
+  width: 450px;
+  height: 5px;
+  background-color: white;
+  display: flex;
+  border-radius: 50px;
+  margin-left: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#handle {
+  width: 4px;
+  height: 20px;
+  background-color: #e02450;
+  margin-top: -7px;
+}
+#songTitle {
+  position: absolute;
+  color: white;
+  font-size: 35px;
+  height: 50px;
+  top: 0;
+}
+#dj-name {
+  position: absolute;
+  color: #e02450;
+  top: 35px;
+  left: 1px;
+  height: 50px;
+  width: 100px;
+  font-size: 20px;
+}
+/* youtube btn */
+#popupbtn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 100px;
+  background-image: url("/img/button.image.png");
+  background-size: 150px 100px;
+  border: none;
+  transition: all 0.4s;
+  margin-top: -82px;
+}
+#popupbtn:hover {
+  width: 250px;
+  height: 175px;
+  background-size: 250px 175px;
+  transition: all 0.4s;
+}
+.popup {
+  display: none;
+  width: 560px;
+  height: 315px;
+  margin: 150px auto;
+
+  transition: all 0.4s;
+}
+.blur-bg {
+  position: fixed;
+  top: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  transition: all 0.4s;
+  filter: blur(0px);
+}
+.blur {
+  filter: blur(3px);
+}
+
+.visible {
+  display: block;
+  transition: all 0.4s;
+}
+
+/* NAVBAR BTNS */
+
+span.icon {
+  margin: 0 5px;
+  color: #e02450;
+}
+
+.mrng-60-top {
+  margin-top: 60px;
+}
+/* Global Button Styles */
+a.animated-button:link,
+a.animated-button:visited {
+  position: relative;
+  display: block;
+  margin: 30px auto 0;
+  padding: 14px 15px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 0.08em;
+  border-radius: 0;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+a.animated-button:link:after,
+a.animated-button:visited:after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  z-index: -1;
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover,
+a.animated-button:visited:hover {
+  color: #fff;
+  text-shadow: none;
+}
+a.animated-button:link:hover:after,
+a.animated-button:visited:hover:after {
+  height: 450%;
+}
+a.animated-button:link,
+a.animated-button:visited {
+  position: relative;
+  display: block;
+  margin: 30px auto 0;
+  padding: 7px 15px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 0;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  height: 15px !important;
+}
+
+/* Victoria Buttons */
+
+a.animated-button.victoria-one:after {
+  background: #e02450;
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+
+a.animated-button.victoria-four:hover:after {
+  opacity: 1;
+  height: 600% !important;
+}
+.row {
+  display: inline-block;
+  float: right;
+  height: 50px;
+  margin-top: 20px;
+}
+.row > div {
+  float: right;
+  height: 25px;
+  margin-top: -19px;
+  margin-left: 10px;
+}
+
+/* about page */
+
+#about-page {
+  background-color: grey;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* #bg-gradian .grad-top {
+  position: fixed;
+  top: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 1));
+} */
