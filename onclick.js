@@ -15,11 +15,11 @@ function closeBlur() {
   blurBg.classList.remove("visible");
   blurContainer.classList.remove("blur");
   song.play();
-
-  ytVideo.pause();
+  pause();
+}
+function pause() {
+  ytVideo.pause;
 }
 
 blurBg.addEventListener("click", closeBlur);
 popupBtn.addEventListener("click", openPopup);
-
-function pausevideo() {}
