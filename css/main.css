@@ -666,7 +666,7 @@ a.animated-button.victoria-four:hover:after {
   content: attr(data-content);
   position: absolute;
   font-weight: 800;
-  top: 60%;
+  top: 70%;
   left: 0;
   height: 100%;
   width: 100%;
