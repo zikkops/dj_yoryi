@@ -20,6 +20,7 @@ function closeBlur() {
   blurBg.classList.remove("visible");
   blurContainer.classList.remove("blur");
   song.play();
+  document.body.removeChild(ytvideo);
 }
 
 blurBg.addEventListener("click", closeBlur);
