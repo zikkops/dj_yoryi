@@ -6,14 +6,15 @@ const blurContainer = document.getElementById("blur-container");
 function openPopup() {
   blurBg.classList.add("visible");
   popupVideo.classList.add("visible");
-
   blurContainer.classList.add("blur");
+  song.pause();
 }
 
 function closeBlur() {
   blurBg.classList.remove("visible");
-
   blurContainer.classList.remove("blur");
+  song.play();
+  player.stopVideo();
 }
 
 blurBg.addEventListener("click", closeBlur);

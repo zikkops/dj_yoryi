@@ -30,6 +30,7 @@
   width: 90vw;
   margin: 0 auto;
   z-index: 20;
+  height: 12vh;
   /* text-align: center; */
 }
 .main-page > div {
@@ -45,6 +46,7 @@
   margin-top: 20px;
 }
 #logo {
+  float: left;
   height: 50px;
   width: 100px;
   background-color: transparent;
@@ -322,38 +324,28 @@
   background-color: transparent;
   border: none;
 }
-#icon-1 {
-  background-color: transparent;
-  background-image: url(/img/sound-cloud.png);
-  background-size: 50px;
-  transform: all 1s;
-  cursor: pointer;
+#info ul {
+  height: 50px;
 }
-#icon-1:hover {
-  background-image: url(/img/sound-cloudw.png);
-  transform: all 1s;
+#icon-container {
+  width: 50px;
+  height: 50px;
 }
-#icon-2 {
-  background-color: transparent;
-  background-image: url(/img/facebook.png);
-  background-size: 50px;
-  transform: all 1s;
-  cursor: pointer;
+#icon-container a {
+  width: 50px;
+  height: 50px;
 }
-#icon-2:hover {
-  background-image: url(/img/facebookw.png);
-  transform: all 1s;
+
+#icon-container img {
+  width: 40px;
+  height: 40px;
+  transition: all 0.5s;
 }
-#icon-3 {
-  background-color: transparent;
-  background-image: url(/img/instagram.png);
-  background-size: 50px;
-  transform: all 1s;
-  cursor: pointer;
-}
-#icon-3:hover {
-  background-image: url(/img/instagramw.png);
-  transform: all 1s;
+#icon-container img:hover {
+  width: 60px;
+  height: 60px;
+  transition: all 0.5s;
+  transform: rotate(360deg);
 }
 #seperator {
   position: absolute;
