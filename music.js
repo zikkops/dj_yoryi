@@ -27,6 +27,12 @@ function playOrPauseSong() {
     document.getElementById("play-btn").src = "./img/icons/play.png";
   }
 }
+function pausesong() {
+  song.pause();
+}
+function playsong() {
+  song.play();
+}
 
 song.addEventListener("timeupdate", function () {
   var position = song.currentTime / song.duration;
