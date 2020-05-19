@@ -9,19 +9,14 @@ function openPopup() {
   popupVideo.classList.add("visible");
   blurContainer.classList.add("blur");
   song.pause();
+  ytVideo.src = "https://www.youtube.com/embed/fqRiqWJcess";
 }
 
 function closeBlur() {
   blurBg.classList.remove("visible");
   blurContainer.classList.remove("blur");
   song.play();
-  pauseVideo();
-}
-function pauseVideo() {
-  this.contentWindow.postMessage(
-    '{"event":"command","func":"stopVideo","args":""}',
-    "*"
-  );
+  ytVideo.src = " ";
 }
 
 blurBg.addEventListener("click", closeBlur);
