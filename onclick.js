@@ -9,13 +9,14 @@ function openPopup() {
   popupVideo.classList.add("visible");
   blurContainer.classList.add("blur");
   song.pause();
-  ytVideo.pause();
 }
 
 function closeBlur() {
   blurBg.classList.remove("visible");
   blurContainer.classList.remove("blur");
   song.play();
+
+  ytVideo.pause();
 }
 
 blurBg.addEventListener("click", closeBlur);
