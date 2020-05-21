@@ -10,6 +10,8 @@
       type="text/css"
     />
     <link rel="stylesheet" href="./css/main.css" />
+
+    <script src="slider.js" defer></script>
     <title>DJ YORYI | About Me</title>
   </head>
   <body id="about">
@@ -20,16 +22,20 @@
         <div id="bot-bg"><img src="/img/bot gradian.png" alt="" /></div>
 
         <nav id="main-nav">
-          <button id="logo">
-            <img
-              src="/img/cap logo-01.png"
-              alt="dj-yoryi-logo"
-              class="nav-logo"
-            />
-          </button>
+          <div id="logo">
+            <a href="index.html">
+              <img
+                src="/img/cap logo-01.png"
+                alt="dj-yoryi-logo"
+                class="nav-logo"
+              />
+            </a>
+          </div>
           <div class="row">
             <div class="col-md-3 col-sm-3 col-xs-6">
-              <a href="#" class="btn btn-sm animated-button victoria-one"
+              <a
+                href="contact.html"
+                class="btn btn-sm animated-button victoria-one"
                 >CONTACT US</a
               >
             </div>
@@ -50,6 +56,112 @@
             </div>
           </div>
         </nav>
+        <main id="main-about">
+          <div id="arrow-right">
+            <div>
+              <a onclick="plusSlides(1)">
+                <img src="/img/icons/arrow right.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div id="arrow-left">
+            <div class="left-arrow">
+              <a onclick="plusSlides(-1)"
+                ><img src="/img/icons/arrow left.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div id="div-content">
+                <h1>About Me</h1>
+                <p>
+                  From Greece to Lebanon, DJ Yoryi has been lighting dance
+                  floors on fire for fifteen years.<br /><br /><br />
+                  Bringing cultures into fusion, he also brings any event to
+                  life both skillfully and tastefully. He juggles multiple music
+                  tastes and genres, a mosaic whose pieces he collected
+                  throughout his journey in Europe and the Middle East.
+                </p>
+              </div>
+              <div id="div-img"><img src="/img/about-me.png" alt="" /></div>
+            </div>
+
+            <div class="mySlides fade">
+              <div id="div-content" class="about-me-hidden">
+                <h1>My career</h1>
+                <p>
+                  <span>Dj Since:</span> 2002<br /><br />
+
+                  <span> Available for:</span> Celebrations, Club, Concerts.
+                  Events, Fashion, Fitness, Festivals, Private parties.<br /><br />
+
+                  <span> Music genre:</span> Deep House, Deep Vocal House, Chill
+                  House, Techno, Deep Tech, Tech House, Listening, Nu Disco,
+                  80's 90's, Arabic.
+                </p>
+              </div>
+              <div id="div-img">
+                <img class="my-career-img" src="/img/music-played.png" alt="" />
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div id="div-content" class="about-me-hidden">
+                <h1>Venues</h1>
+                <div id="list-div">
+                  <div class="list-1">
+                    <h3>Lebanon</h3>
+                    <ul>
+                      <li>Puerto - Publicity Jbeil</li>
+                      <li>Scaro Bar - Jbeil</li>
+                      <li>Pierre & Friends - Batroun</li>
+                      <li>Jbeil Open Festival</li>
+                      <li>Forest Frequencies Open Air Festival</li>
+                      <li>B018 Beirut</li>
+                    </ul>
+                  </div>
+                  <div class="list-2">
+                    <h3>UAE</h3>
+                    <ul>
+                      <li>Above Sofitel</li>
+                      <li>Vida Downtown</li>
+                      <li>Cymatics Downtown H Hotel Zuma DIFC</li>
+                    </ul>
+                  </div>
+                  <div class="list-3">
+                    <h3>Europe</h3>
+                    <ul>
+                      <li>Euphoria - Greece Venue - Greece</li>
+                      <li>Bullerbin - Sweden</li>
+                      <li>Goodwill Festival - Sweden</li>
+                      <li>Flying Circus Festival - Sweden</li>
+                    </ul>
+                  </div>
+                  <div class="list-4">
+                    <h3>Corporate Events</h3>
+                    <ul>
+                      <li>Chanel Ferrari</li>
+                      <li>Singer Porsche Designer Skydive Dubai</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div id="div-img">
+                <img class="my-career-img" src="/img/venues.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <!-- The dots/circles -->
+          <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </main>
         <div id="main-home">
           <button id="sub-btn">JOIN OUR DJ SCHOOL</button>
         </div>
