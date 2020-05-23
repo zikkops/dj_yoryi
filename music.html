@@ -10,9 +10,20 @@
       type="text/css"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <script src="/loader.js" defer></script>
     <title>DJ YORYI | Contact Me</title>
   </head>
-  <body id="music">
+  <body id="music" onload="loaderInvisiable()">
+    <div id="pre-loader">
+      <div class="sk-chase">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div>
+    </div>
     <div id="top-bg"><img src="/img/top gradian.png" alt="" /></div>
     <div id="bot-bg"><img src="/img/bot gradian.png" alt="" /></div>
     <div id="bg-grey">
@@ -55,9 +66,7 @@
             </div>
           </div>
         </nav>
-        <!-- <div id="main-home">
-          <button id="sub-btn">JOIN OUR DJ SCHOOL</button>
-        </div> -->
+     
       </header>
       
       <main id="music-genre">
@@ -129,7 +138,8 @@
         <div id="footer-separator"></div>
         <div class="footer-item btn-item">
           <h4>DJ School</h4>
-          <button id="footer-btn">Start Your Career</button>
+            <a id="footer-btn" href="/dj-school.html" >Start Your Career</a>
+          
         </div>
         <div id="footer-separator"></div>
         <div class="footer-item">

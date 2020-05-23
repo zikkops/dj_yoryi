@@ -10,9 +10,20 @@
       type="text/css"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <script src="/loader.js" defer></script>
     <title>DJ YORYI | Contact Me</title>
   </head>
-  <body id="contact">
+  <body id="contact" onload="loaderInvisiable()">
+    <div id="pre-loader">
+      <div class="sk-chase">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div>
+    </div>
     <div id="top-bg"><img src="/img/top gradian.png" alt="" /></div>
     <div id="bot-bg"><img src="/img/bot gradian.png" alt="" /></div>
     <div id="bg-grey">
@@ -61,7 +72,7 @@
         </nav>
         <div id="main-contact">
           <h1>CONTACT</h1>
-          <!-- <h2>Kozakura</h2> -->
+
           <form name="contact-info" data-netlify="true" id="form">
             <div class="form">
               <input type="text " name="name" required autocomplete="off" />
@@ -135,7 +146,7 @@
               </li>
             </ul>
           </div>
-          <button id="sub-btn">JOIN OUR DJ SCHOOL</button>
+          <a href="/dj-school.html" id="sub-btn">JOIN OUR DJ SCHOOL</a>
         </div>
       </header>
     </div>
@@ -174,7 +185,7 @@
         <div id="footer-separator"></div>
         <div class="footer-item btn-item">
           <h4>DJ School</h4>
-          <button id="footer-btn">Start Your Career</button>
+          <a id="footer-btn" href="/dj-school.html">Start Your Career</a>
         </div>
         <div id="footer-separator"></div>
         <div class="footer-item">

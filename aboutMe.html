@@ -12,9 +12,20 @@
     <link rel="stylesheet" href="./css/main.css" />
 
     <script src="slider.js" defer></script>
+    <script src="/loader.js" defer></script>
     <title>DJ YORYI | About Me</title>
   </head>
-  <body id="about">
+  <body id="about" onload="loaderInvisiable()">
+    <div id="pre-loader">
+      <div class="sk-chase">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div>
+    </div>
     <div id="bg-grey">
       <!-- home page -->
       <header id="home-page">
@@ -169,7 +180,7 @@
           </div>
         </main>
         <div id="main-home">
-          <button id="sub-btn">JOIN OUR DJ SCHOOL</button>
+          <a href="/dj-school.html" id="sub-btn">JOIN OUR DJ SCHOOL</a>
         </div>
       </header>
     </div>
