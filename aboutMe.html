@@ -29,49 +29,58 @@
     <div id="bg-grey">
       <!-- home page -->
       <header id="home-page">
-        <div id="top-bg"><img src="/img/top gradian.png" alt="" /></div>
-        <div id="bot-bg"><img src="/img/bot gradian.png" alt="" /></div>
+        <div class="about-bg"><img src="/img/about-bg-2 .jpg" alt="" /></div>
 
         <nav id="main-nav">
-          <div id="logo">
-            <a href="index.html">
-              <img
-                src="/img/cap logo-01.png"
-                alt="dj-yoryi-logo"
-                class="nav-logo"
-              />
-            </a>
+          <div class="main-nav-margin">
+            <div id="logo">
+              <a href="index.html">
+                <img
+                  src="/img/cap logo-01.png"
+                  alt="dj-yoryi-logo"
+                  class="nav-logo"
+                />
+              </a>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-sm-3 col-xs-6">
+                <a
+                  href="contact.html"
+                  class="btn btn-sm animated-button victoria-one"
+                  >CONTACT US</a
+                >
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-6">
+                <a
+                  href="dj-school.html"
+                  class="btn btn-sm animated-button victoria-one"
+                  >DJ SCHOOL</a
+                >
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-6">
+                <a
+                  href="music.html"
+                  class="btn btn-sm animated-button victoria-one"
+                  >MUSIC</a
+                >
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-6">
+                <a
+                  href="aboutMe.html"
+                  class="btn btn-sm animated-button victoria-one"
+                  >ABOUT ME</a
+                >
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-6">
+                <a
+                  href="index.html"
+                  class="btn btn-sm animated-button victoria-one"
+                  >HOME</a
+                >
+              </div>
+            </div>
           </div>
-          <div class="row">
-            <div class="col-md-3 col-sm-3 col-xs-6">
-              <a
-                href="contact.html"
-                class="btn btn-sm animated-button victoria-one"
-                >CONTACT US</a
-              >
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-6">
-              <a
-                href="dj-school.html"
-                class="btn btn-sm animated-button victoria-one"
-                >DJ SCHOOL</a
-              >
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-6">
-              <a
-                href="music.html"
-                class="btn btn-sm animated-button victoria-one"
-                >MUSIC</a
-              >
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-6">
-              <a
-                href="aboutMe.html"
-                class="btn btn-sm animated-button victoria-one"
-                >ABOUT ME</a
-              >
-            </div>
-          </div>
+          <div id="top-bg"><img src="/img/top gradian.png" alt="" /></div>
         </nav>
         <main id="main-about">
           <div id="arrow-right">
@@ -173,16 +182,44 @@
           <br />
 
           <!-- The dots/circles -->
-          <div style="text-align: center;">
+          <div style="text-align: center;" class="dots">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
           </div>
+
+          <div id="bot-bg"><img src="/img/bot gradian.png" alt="" /></div>
         </main>
         <div id="main-home">
           <a href="/dj-school.html" id="sub-btn">JOIN OUR DJ SCHOOL</a>
         </div>
       </header>
     </div>
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="footer-item about">
+          <h4><a href="/aboutMe.html">About</a></h4>
+          <ul>
+            <li><a href="/aboutMe.html">About Me</a></li>
+            <li><a href="/aboutMe2.html">My Career</a></li>
+            <li><a href="/aboutMe3.html">Venues</a></li>
+          </ul>
+          <h4><a href="/music.html">Music</a></h4>
+        </div>
+        <div id="footer-separator"></div>
+        <div class="footer-item school">
+          <h4>DJ School</h4>
+          <a href="/dj-school.html">Start Your Career</a>
+        </div>
+        <div id="footer-separator"></div>
+        <div class="footer-item contact">
+          <p>
+            <span>E-mail:</span
+            ><a href="www.gmail.com">georges.hayek@infinitbeats.com</a>
+          </p>
+          <p><span>Phone Number:</span><a href="">+971562750754</a></p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
