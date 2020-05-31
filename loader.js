@@ -18,9 +18,9 @@
 //   } else {
 //     clearInterval(fadeEffect);
 //   }
-// }, 200);
+// // }, 200);
 
-window.addEventListener("load", fadeEffect);
+// window.addEventListener("load", fadeEffect);
 const loader = document.getElementById("pre-loader");
 function loaderInvisiable() {
   loader.classList.add("loader-invisable");
