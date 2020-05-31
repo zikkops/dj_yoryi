@@ -3,23 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      media="screen"
-      href="https://fontlibrary.org/face/decovar"
-      type="text/css"
-    />
+    <link rel="stylesheet" href="./css/main.css" />
     <script src="music.js" defer></script>
     <script src="onclick.js" defer></script>
-    <link rel="stylesheet" href="./css/main.css" />
-    <title>DJ YORYI | Home Page | DJ Teacher</title>
+    <title>Document</title>
   </head>
-  <body id="home">
+  <body>
     <div id="blur-container">
-      <!-- home page -->
-      <header id="home-page">
-        <nav id="main-nav" class="main-home-page">
-          <div class="row main-page">
+      <header id="header-index">
+        <nav id="home-main-nav">
+          <div class="row home-nav">
             <div class="col-md-3 col-sm-3 col-xs-6">
               <a
                 href="contact.html"
@@ -50,13 +43,14 @@
             </div>
           </div>
         </nav>
-        <div id="main-home">
-          <div id="center-logo">
-            <img src="/img/Yoryi.png" alt="Dj-Yoryi-Music" class="main-logo" />
-          </div>
-          <a href="/dj-school.html" id="sub-btn">JOIN OUR DJ SCHOOL</a>
+      </header>
+      <main id="main-home">
+        <div id="center-logo">
+          <img src="/img/Yoryi.png" alt="Dj-Yoryi-Music" class="main-logo" />
         </div>
-
+        <a href="/dj-school.html" id="sub-btn">JOIN OUR DJ SCHOOL</a>
+      </main>
+      <footer id="home-footer">
         <div id="player">
           <div id="player-cont">
             <div id="songTitle"></div>
@@ -76,10 +70,10 @@
               <div id="fill"></div>
               <div id="handle"></div>
             </div>
+            <button id="popupbtn"></button>
           </div>
-          <button id="popupbtn"></button>
         </div>
-      </header>
+      </footer>
     </div>
     <div id="blured-bg" class="blur-bg">
       <div id="close-btn">
@@ -100,5 +94,3 @@
     </div>
   </body>
 </html>
-
-<!-- src="https://www.youtube.com/embed/fqRiqWJcess" -->

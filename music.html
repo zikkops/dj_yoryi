@@ -11,9 +11,10 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
     <script src="/loader.js" defer></script>
+    <script src="/onclick.js" defer></script>
     <title>DJ YORYI | My Music | EDM | Techno | oriental</title>
   </head>
-  <body id="music" onload="loaderInvisiable()">
+  <body id="music-bd" onload="loaderInvisiable()">
     <div id="pre-loader">
       <div class="sk-chase">
         <div class="sk-chase-dot"></div>
@@ -24,101 +25,140 @@
         <div class="sk-chase-dot"></div>
       </div>
     </div>
-    
-    <div class="music-bg">
-      <img src="/img/bruno-cervera-Gi6-m_t_W-E-unsplash.jpg" alt="">
-    </div>
-    <div id="bg-grey">
-      <!-- home page -->
-      <header id="contact-page">
-        <nav id="main-nav">
-          
-          <div class="main-nav-margin">
-            <div id="logo">
-              <a href="index.html">
-                <img
-                  src="/img/cap logo-01.png"
-                  alt="dj-yoryi-logo"
-                  class="nav-logo"
-                />
-              </a>
-            </div>
-            <div class="row">
-              <div class="col-md-3 col-sm-3 col-xs-6">
-                <a
-                  href="contact.html"
-                  class="btn btn-sm animated-button victoria-one"
-                  >CONTACT US</a
-                >
-              </div>
-              <div class="col-md-3 col-sm-3 col-xs-6">
-                <a href="dj-school.html" class="btn btn-sm animated-button victoria-one"
-                  >DJ SCHOOL</a
-                >
-              </div>
-              <div class="col-md-3 col-sm-3 col-xs-6">
-                <a href="music.html" class="btn btn-sm animated-button victoria-one"
-                  >MUSIC</a
-                >
-              </div>
-              <div class="col-md-3 col-sm-3 col-xs-6">
-                <a
-                  href="aboutMe.html"
-                  class="btn btn-sm animated-button victoria-one"
-                  >ABOUT ME</a
-                >
-              </div>
-              <div class="col-md-3 col-sm-3 col-xs-6">
-                <a
-                  href="index.html"
-                  class="btn btn-sm animated-button victoria-one"
-                  >HOME</a
-                >
+
+    <div id="top-bg"><img src="/img/top gradian.png" alt="" /></div>
+    <div id="bot-bg"><img src="/img/bot gradian.png" alt="" /></div>
+    <img
+      src="/img/bruno-cervera-Gi6-m_t_W-E-unsplash.jpg"
+      class="music-bg"
+      alt=""
+    />
+    <a href="/dj-school.html" id="sub-btn">JOIN OUR DJ SCHOOL</a>
+    <header>
+      <nav id="main-nav" >
+        <div class="main-nav-margin">
+          <div id="logo">
+            <a href="index.html">
+              <img
+                src="/img/cap logo-01.png"
+                alt="dj-yoryi-logo"
+                class="nav-logo"
+              />
+            </a>
+          </div>
+          <!-- test -->
+          <div class="menu-wrap invisible-menu">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+              <div>
+                <div>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutMe.html">About Me</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="dj-school.html">Dj School</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
-            
           </div>
-        </nav>
-     
-      </header>
-      
-      <main id="music-genre">
-        
-        <h1>Chose Your Genre</h1>
-        <button id="music-container">
-          <img src="img/deephouse.png" alt="">
-          <div class="genre-name">
-            <h3>Deep House</h3>
+  <!-- test -->
+          <div class="row invisible">
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <a
+                href="contact.html"
+                class="btn btn-sm animated-button victoria-one"
+                >CONTACT US</a
+              >
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <a
+                href="dj-school.html"
+                class="btn btn-sm animated-button victoria-one"
+                >DJ SCHOOL</a
+              >
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <a
+                href="music.html"
+                class="btn btn-sm animated-button victoria-one"
+                >MUSIC</a
+              >
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <a
+                href="aboutMe.html"
+                class="btn btn-sm animated-button victoria-one"
+                >ABOUT ME</a
+              >
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <a
+                href="index.html"
+                class="btn btn-sm animated-button victoria-one"
+                >HOME</a
+              >
+            </div>
           </div>
-        </button>
-        <button id="music-container"><img src="img/techno house.png" alt="">
-          <div class="genre-name">
-            <h3>Techno House</h3>
-          </div></button>
-        <button id="music-container"><img src="img/techno.png" alt=""><div class="genre-name small">
+        </div>
+      </nav>
+    </header>
+    <main id="main-music">
+      <h1>Chose Your Genre</h1>
+      <div id="music-flex">
+      <button id="music-container">
+        <img src="img/deephouse.png" alt="" />
+        <div class="genre-name">
+          <h3>Deep House</h3>
+        </div>
+      </button>
+      <button id="music-container">
+        <img src="img/techno house.png" alt="" />
+        <div class="genre-name">
+          <h3>Techno House</h3>
+        </div>
+      </button>
+      <button id="music-container">
+        <img src="img/techno.png" alt="" />
+        <div class="genre-name small">
           <h3>Techno</h3>
-        </div></button>
-        <button id="music-container"><img src="img/deeptech.png" alt=""><div class="genre-name">
+        </div>
+      </button>
+      <button id="music-container">
+        <img src="img/deeptech.png" alt="" />
+        <div class="genre-name">
           <h3>Deep Tech</h3>
-        </div></button>
-        <button id="music-container"><img src="img/oriental.png" alt=""><div class="genre-name small">
+        </div>
+      </button>
+      <button id="music-container">
+        <img src="img/oriental.png" alt="" />
+        <div class="genre-name small">
           <h3>Oriental</h3>
-        </div></button>
-        <button id="music-container"><img src="img/chill.png" alt=""><div class="genre-name small">
+        </div>
+      </button>
+      <button id="music-container">
+        <img src="img/chill.png" alt="" />
+        <div class="genre-name small">
           <h3>Chill</h3>
-        </div></button>
-        <button id="music-container"><img src="img/90's.png" alt=""><div class="genre-name small">
+        </div>
+      </button>
+      <button id="music-container">
+        <img src="img/90's.png" alt="" />
+        <div class="genre-name small">
           <h3>90's</h3>
-        </div></button>
-        <button id="music-container"><img src="img/nu-disco.png" alt=""><div class="genre-name">
+        </div>
+      </button>
+      <button id="music-container">
+        <img src="img/nu-disco.png" alt="" />
+        <div class="genre-name">
           <h3>Nu Disco</h3>
-        </div></button>
-        
-        
-      </main>
-      <div id="top-bg"><img src="/img/top gradian.png" alt="" /></div>
-      <footer id="footer">
-        <div class="footer-container">
+        </div>
+        </div>
+      </button>
+      <footer id="footer-about" class="footer-contact">
+        <div class="footer-container footer-school">
           <div class="footer-item about">
             <h4><a href="/aboutMe.html">About</a></h4>
             <ul>
@@ -137,16 +177,23 @@
           <div class="footer-item contact">
             <p>
               <span>E-mail:</span
-              ><a href="https://www.gmail.com" target="_blank">georges.hayek@infinitbeats.com</a>
+              ><a href="https://www.gmail.com" target="_blank"
+                >georges.hayek@infinitbeats.com</a
+              >
             </p>
             <p>
               <span>Phone Number:</span
-              ><a href="https://web.whatsapp.com/b" target="_blank">+971562750754</a>
+              ><a href="https://web.whatsapp.com/b" target="_blank"
+                >+971562750754</a
+              >
             </p>
           </div>
         </div>
+        <div id="bot-bg" class="gradian-shcool">
+          <img src="/img/bot gradian.png" alt="" />
+        </div>
       </footer>
+    </main>
     
-    <div id="bot-bg"><img src="/img/bot gradian.png" alt="" /></div>
   </body>
 </html>

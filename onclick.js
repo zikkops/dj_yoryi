@@ -25,3 +25,43 @@ function closeBlur() {
 
 blurBg.addEventListener("click", closeBlur);
 popupBtn.addEventListener("click", openPopup);
+
+// second btn
+
+(function ($) {
+  function getScrollbarWidth() {
+    var scroll, noscroll;
+    var outer = $("<div></div>"),
+      inner = $("<div></div>");
+
+    outer.css({
+      width: "100px",
+      visibility: "hidden",
+      msOverflowStyle: "scrollbar",
+    });
+
+    $("body").append(outer);
+    noscroll = outer.width();
+
+    outer.css({ overflow: "scroll" });
+    inner.css({ width: "100%" });
+    outer.append(inner);
+    scroll = inner.width();
+
+    //outer.remove();
+
+    return noscroll - scroll;
+  }
+
+  $(".button-menu").click(function () {
+    $(this).closest(".menu-container").toggleClass("active");
+  });
+
+  $(".button-add").click(function () {
+    alert("Вы хотите что-то добавить?");
+  });
+
+  var scrollWidth = getScrollbarWidth();
+  $(".menu-container").css({ marginRight: -scrollWidth });
+  $(".menu").css("width", "+=" + scrollWidth);
+})(jQuery);
