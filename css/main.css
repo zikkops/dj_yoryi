@@ -7,7 +7,7 @@
   outline: none;
 }
 body {
-  overflow: hidden;
+  overflow-y: auto;
 }
 #contact {
   overflow-y: auto;
@@ -340,6 +340,17 @@ a.animated-button.victoria-four:hover:after {
 }
 
 /* About */
+#about-bg {
+  background: url("/img/about-bg-2\ .jpg") top center/cover;
+  position: fixed;
+  filter: blur(8px);
+  top: 0;
+  left: 0;
+  width: 300vw;
+  height: 100%;
+  z-index: -30;
+  max-height: 1000px;
+}
 #main-about {
   height: 100vh;
   width: 100vw;
@@ -348,7 +359,6 @@ a.animated-button.victoria-four:hover:after {
   position: relative;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
-  margin-top: 2.1vh;
 }
 .blur-img {
   width: 2000px;
@@ -455,6 +465,8 @@ a.animated-button.victoria-four:hover:after {
   }
 }
 .slideshow-container {
+  display: block;
+  height: 500px;
   width: 100vw;
   margin-top: 50vh;
   transform: translateY(-50%);
@@ -464,7 +476,7 @@ a.animated-button.victoria-four:hover:after {
   width: 70vw;
   height: 60vh;
   margin-left: 15vw;
-  /* margin-top: 10%; */
+  margin-top: 60px;
   display: flex;
 }
 #div-content {
@@ -538,9 +550,10 @@ a.animated-button.victoria-four:hover:after {
 }
 .dots {
   margin-top: 20px;
-  position: fixed;
-  left: 48%;
-  bottom: 10%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .active,
@@ -809,11 +822,27 @@ a.animated-button.victoria-four:hover:after {
 
 /* contact */
 
-.contact-bg {
+#contact-container {
+  position: relative;
+  display: inline-block;
   width: 100vw;
-  z-index: -50;
+  min-height: 80vh;
+  padding-top: 20vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#contact-container h1 {
+  color: white;
+  text-align: center;
+}
+#contact-bg {
+  background: url("/img/form-bg-2.jpg") center center/cover;
   position: fixed;
   top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: -30;
+  max-height: 1000px;
 }
 .contact-bg img {
   width: 1500px;
@@ -838,8 +867,8 @@ a.animated-button.victoria-four:hover:after {
 #form {
   display: block;
   float: left;
-  width: 40vw;
-  margin-left: 10vw;
+  width: 35vw;
+  margin-left: 15vw;
 }
 
 .submit-form {
@@ -1350,8 +1379,8 @@ a.animated-button.victoria-four:hover:after {
 .menu-wrap .menu > div {
   background: rgba(0, 0, 0, 0.6);
   border-radius: 50%;
-  width: 200vw;
-  height: 200vw;
+  width: 300vw;
+  height: 300vw;
   display: flex;
   flex: none;
   align-items: center;
@@ -1383,120 +1412,6 @@ a.animated-button.victoria-four:hover:after {
   color: #e02450;
 }
 /* LOADER CSS */
-
-/* Media querrys */
-@media all and (max-width: 1024px) {
-  .invisible-menu {
-    display: block;
-  }
-  .invisible {
-    display: none !important;
-  }
-  #div-img {
-    display: none;
-  }
-  .my-career-img {
-    display: none;
-  }
-  #div-content {
-    width: 100%;
-  }
-  #div-content p {
-    width: 60%;
-    margin-left: 20%;
-  }
-  #div-content h1 {
-    margin-left: 20%;
-  }
-  #div-content ul {
-    margin-left: 20%;
-    font-size: 1rem;
-  }
-  #div-content h3 {
-    margin-left: 20%;
-    font-size: 1.5rem;
-  }
-  .about li {
-    display: none;
-  }
-  .about h4 {
-    margin-right: 30px;
-  }
-  .footer-container {
-    width: 90vw;
-    margin-left: 5vw;
-    grid-template-columns: 0.6fr 0.1fr 1fr 0.1fr 1fr;
-  }
-  #footer-about .contact {
-    width: 260px;
-  }
-  #footer-about .contact span {
-    font-size: 0.9rem;
-  }
-  #footer-about a {
-    font-size: 0.9rem;
-  }
-
-  /* contact */
-  #info {
-    width: 300px;
-    float: left;
-    margin-left: 50%;
-    transform: translate(-50%);
-  }
-  #seperator {
-    display: none;
-  }
-  #form {
-    margin-left: 50%;
-    transform: translate(-50%);
-  }
-}
-@media all and (max-width: 768px) {
-  .mySlides {
-    justify-content: center;
-    align-content: center;
-  }
-  #home-footer {
-    height: 100px;
-  }
-  #buttons {
-    text-align: center;
-  }
-
-  #seek-bar {
-    grid-column: 2;
-  }
-  #popupbtn {
-    display: none;
-  }
-  #player-cont {
-    width: 90vw;
-    float: left;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-  /* about me */
-  .div-h1 {
-    font-size: 1.4rem !important;
-  }
-  .div-h3 {
-    font-size: 1.1rem !important;
-  }
-  .div-ul {
-    font-size: 0.8rem !important;
-  }
-
-  #arrow-right img {
-    width: 50px;
-    height: 50px;
-    margin-left: 50px;
-  }
-  #arrow-left img {
-    width: 50px;
-    height: 50px;
-  }
-}
 /* pre loader */
 .sk-chase {
   width: 40px;
@@ -1623,4 +1538,155 @@ a.animated-button.victoria-four:hover:after {
   background: white;
   transform: rotate(-45deg);
   margin-top: -2px;
+}
+
+/* Media querrys */
+@media all and (max-width: 1024px) {
+  .invisible-menu {
+    display: block;
+  }
+  .invisible {
+    display: none !important;
+  }
+  #div-img {
+    display: none;
+  }
+  .my-career-img {
+    display: none;
+  }
+  #div-content {
+    margin-top: -70px;
+    width: 100%;
+  }
+  #div-content p {
+    width: 60%;
+    margin-left: 20%;
+  }
+  #div-content h1 {
+    margin-left: 20%;
+  }
+  #div-content ul {
+    margin-left: 20%;
+    font-size: 1rem;
+  }
+  #div-content h3 {
+    margin-left: 20%;
+    font-size: 1.5rem;
+  }
+  .about li {
+    display: none;
+  }
+  .about h4 {
+    margin-right: 30px;
+  }
+  .footer-container {
+    width: 90vw;
+    margin-left: 5vw;
+    grid-template-columns: 0.6fr 0.1fr 1fr 0.1fr 1fr;
+  }
+  #footer-about .contact {
+    width: 260px;
+  }
+  #footer-about .contact span {
+    font-size: 0.9rem;
+  }
+  #footer-about a {
+    font-size: 0.9rem;
+  }
+
+  /* contact */
+  #info {
+    width: 300px;
+    float: left;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  #seperator {
+    display: none;
+  }
+  #form {
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  /* dj shcool */
+  #second-school p {
+    padding-top: 100px;
+  }
+}
+@media all and (max-width: 768px) {
+  .mySlides {
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    height: 90%;
+  }
+
+  #home-footer {
+    height: 100px;
+  }
+  #buttons {
+    text-align: center;
+  }
+
+  #seek-bar {
+    grid-column: 2;
+  }
+  #popupbtn {
+    display: none;
+  }
+  #player-cont {
+    width: 90vw;
+    float: left;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  #form {
+    width: 240px;
+  }
+  /* about me */
+  .div-h1 {
+    font-size: 1.4rem !important;
+  }
+  .div-h3 {
+    font-size: 1.1rem !important;
+  }
+  .div-ul {
+    font-size: 0.8rem !important;
+  }
+
+  #arrow-right img {
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+  }
+  #arrow-left img {
+    width: 50px;
+    height: 50px;
+  }
+  /* dj school */
+  #second-school p {
+    padding-top: 50px;
+    width: 80vw;
+  }
+  #third-school h1 {
+    padding-top: 11px;
+    font-size: 1rem;
+  }
+  /* footer */
+  .about {
+    display: none;
+  }
+  .left-footer-separator {
+    display: none;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: center;
+  }
+  .school {
+    width: 200px;
+  }
+  .school h4 {
+    display: none;
+  }
 }

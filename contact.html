@@ -13,7 +13,7 @@
     <script src="/loader.js" defer></script>
     <title>DJ YORYI | Contact Me | Book Me</title>
   </head>
-  <body id="contact" onload="loaderInvisiable()">
+  <body onload="loaderInvisiable()">
     <div id="pre-loader">
       <div class="sk-chase">
         <div class="sk-chase-dot"></div>
@@ -24,9 +24,7 @@
         <div class="sk-chase-dot"></div>
       </div>
     </div>
-    <img src="/img/form-bg-2.jpg" class="contact-bg" alt="" />
-    <div id="top-bg"><img src="/img/top gradian.png" alt="" /></div>
-    <div id="bot-bg"><img src="/img/bot gradian.png" alt="" /></div>
+
     <header>
       <nav id="main-nav">
         <div class="main-nav-margin">
@@ -98,9 +96,10 @@
         </div>
       </nav>
     </header>
-    <main id="main-contact">
-      <div class="contact-container">
-        <h1>CONTACT</h1>
+
+    <main>
+      <div id="contact-container">
+        <h1>Join us</h1>
 
         <form name="contact-info" data-netlify="true" id="form">
           <div class="form">
@@ -175,8 +174,9 @@
             </li>
           </ul>
         </div>
+        <div id="contact-bg"></div>
         <footer id="footer-about" class="footer-contact">
-          <div class="footer-container">
+          <div class="footer-container footer-school">
             <div class="footer-item about">
               <h4><a href="/aboutMe.html">About</a></h4>
               <ul>
@@ -186,7 +186,7 @@
               </ul>
               <h4><a href="/music.html">Music</a></h4>
             </div>
-            <div id="footer-separator"></div>
+            <div id="footer-separator" class="left-footer-separator"></div>
             <div class="footer-item school">
               <h4>DJ School</h4>
               <a href="/dj-school.html">Start Your Career</a>
@@ -207,9 +207,11 @@
               </p>
             </div>
           </div>
+          <div id="bot-bg" class="gradian-shcool">
+            <img src="/img/bot gradian.png" alt="" />
+          </div>
         </footer>
-      </div>
-      <a href="/dj-school.html" id="sub-btn">JOIN OUR DJ SCHOOL</a>
+      </d>
     </main>
   </body>
 </html>

@@ -26,7 +26,7 @@
         <div class="sk-chase-dot"></div>
       </div>
     </div>
-    <img src="/img/about-bg-2 .jpg" class="blur-img" alt="" />
+    <div id="about-bg"></div>
     <div id="top-bg"><img src="/img/top gradian.png" alt="" /></div>
     <div id="bot-bg"><img src="/img/bot gradian.png" alt="" /></div>
     <header>
@@ -196,15 +196,14 @@
             <img class="my-career-img" src="/img/venues.png" alt="" />
           </div>
         </div>
+        <!-- The dots/circles -->
+        <div style="text-align: center;" class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
       </div>
       <br />
-
-      <!-- The dots/circles -->
-      <div style="text-align: center;" class="dots">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
 
       <a href="/dj-school.html" id="sub-btn">JOIN OUR DJ SCHOOL</a>
       <footer id="footer-about">
@@ -218,7 +217,7 @@
             </ul>
             <h4><a href="/music.html">Music</a></h4>
           </div>
-          <div id="footer-separator"></div>
+          <div id="footer-separator" class="left-footer-separator"></div>
           <div class="footer-item school">
             <h4>DJ School</h4>
             <a href="/dj-school.html">Start Your Career</a>
