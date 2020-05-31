@@ -13,7 +13,7 @@
     <script src="/loader.js" defer></script>
     <title>DJ YORYI | Contact Me | Book Me</title>
   </head>
-  <body onload="loaderInvisiable()">
+  <body id="contact" onload="loaderInvisiable()">
     <div id="pre-loader">
       <div class="sk-chase">
         <div class="sk-chase-dot"></div>
@@ -99,108 +99,117 @@
       </nav>
     </header>
     <main id="main-contact">
-      <h1>CONTACT</h1>
+      <div class="contact-container">
+        <h1>CONTACT</h1>
 
-      <form name="contact-info" data-netlify="true" id="form">
-        <div class="form">
-          <input type="text " name="name" required autocomplete="off" />
-          <label for="name" class="label-name">
-            <span class="content-name">Name</span>
-          </label>
-        </div>
-        <div class="form">
-          <input type="text " name="E-mail" required autocomplete="off" />
-          <label for="E-mail" class="label-name">
-            <span class="content-name">E-mail</span>
-          </label>
-        </div>
-        <div class="form">
-          <input type="text " name="Phone-number" required autocomplete="off" />
-          <label for="Phone-number" class="label-name">
-            <span class="content-name">Phone-number </span>
-          </label>
-        </div>
-        <div class="form big-box">
-          <textarea name="Message" id="" cols="30" rows="10"></textarea>
-          <label for="Message" class="label-name">
-            <span class="content-name message">Message </span>
-          </label>
-        </div>
-        <button id="submit-btn">Submit</button>
-      </form>
+        <form name="contact-info" data-netlify="true" id="form">
+          <div class="form">
+            <input type="text " name="name" required autocomplete="off" />
+            <label for="name" class="label-name">
+              <span class="content-name">Name</span>
+            </label>
+          </div>
+          <div class="form">
+            <input type="text " name="E-mail" required autocomplete="off" />
+            <label for="E-mail" class="label-name">
+              <span class="content-name">E-mail</span>
+            </label>
+          </div>
+          <div class="form">
+            <input
+              type="text "
+              name="Phone-number"
+              required
+              autocomplete="off"
+            />
+            <label for="Phone-number" class="label-name">
+              <span class="content-name">Phone-number </span>
+            </label>
+          </div>
+          <div class="form big-box">
+            <textarea name="Message" id="" cols="30" rows="10"></textarea>
+            <label for="Message" class="label-name">
+              <span class="content-name message">Message </span>
+            </label>
+          </div>
+          <button id="submit-btn">Submit</button>
+        </form>
 
-      <div id="seperator"></div>
-      <div id="info">
-        <h3>E-mail:</h3>
-        <p>georges.hayek@infinitbeats.com</p>
-        <h3>Phone Number:</h3>
-        <p>+971562750754</p>
-        <h2>Stay Connected</h2>
-        <ul>
-          <li>
-            <div id="icon-container" class="sound-cloud">
-              <a href="https://soundcloud.com/dj-yoryi" target="_blank"
-                ><img
-                  src="/img/sound-cloud.png"
-                  alt="https://soundcloud.com/dj-yoryi"
-              /></a>
+        <div id="seperator"></div>
+        <div id="info">
+          <h3>E-mail:</h3>
+          <p>info@infinitbeats.com</p>
+          <h3>Phone Number:</h3>
+          <p>+971562750754</p>
+          <h2>Stay Connected</h2>
+          <ul>
+            <li>
+              <div id="icon-container" class="sound-cloud">
+                <a href="https://soundcloud.com/dj-yoryi" target="_blank"
+                  ><img
+                    src="/img/sound-cloud.png"
+                    alt="https://soundcloud.com/dj-yoryi"
+                /></a>
+              </div>
+            </li>
+            <li>
+              <div id="icon-container" class="facebook">
+                <a href="https://www.facebook.com/YoryiDJ/" target="_blank"
+                  ><img
+                    src="/img/facebook.png"
+                    alt="https://www.facebook.com/YoryiDJ/"
+                /></a>
+              </div>
+            </li>
+            <li>
+              <div id="icon-container">
+                <a
+                  href="https://www.instagram.com/djyoryi/?hl=en"
+                  target="_blank"
+                  ><img
+                    src="/img/instagram.png"
+                    alt="https://www.instagram.com/djyoryi/?hl=en"
+                    class="insta"
+                /></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <footer id="footer-about" class="footer-contact">
+          <div class="footer-container">
+            <div class="footer-item about">
+              <h4><a href="/aboutMe.html">About</a></h4>
+              <ul>
+                <li><a href="/aboutMe.html">About Me</a></li>
+                <li><a href="/aboutMe2.html">My Career</a></li>
+                <li><a href="/aboutMe3.html">Venues</a></li>
+              </ul>
+              <h4><a href="/music.html">Music</a></h4>
             </div>
-          </li>
-          <li>
-            <div id="icon-container" class="facebook">
-              <a href="https://www.facebook.com/YoryiDJ/" target="_blank"
-                ><img
-                  src="/img/facebook.png"
-                  alt="https://www.facebook.com/YoryiDJ/"
-              /></a>
+            <div id="footer-separator"></div>
+            <div class="footer-item school">
+              <h4>DJ School</h4>
+              <a href="/dj-school.html">Start Your Career</a>
             </div>
-          </li>
-          <li>
-            <div id="icon-container">
-              <a href="https://www.instagram.com/djyoryi/?hl=en" target="_blank"
-                ><img
-                  src="/img/instagram.png"
-                  alt="https://www.instagram.com/djyoryi/?hl=en"
-                  class="insta"
-              /></a>
+            <div id="footer-separator"></div>
+            <div class="footer-item contact">
+              <p>
+                <span>E-mail:</span
+                ><a href="https://www.gmail.com" target="_blank"
+                  >info@infinitbeats.com</a
+                >
+              </p>
+              <p>
+                <span>Phone Number:</span
+                ><a href="https://web.whatsapp.com/b" target="_blank"
+                  >+971562750754</a
+                >
+              </p>
             </div>
-          </li>
-        </ul>
+          </div>
+        </footer>
       </div>
       <a href="/dj-school.html" id="sub-btn">JOIN OUR DJ SCHOOL</a>
-      <footer id="footer-about" class="footer-contact">
-        <div class="footer-container">
-          <div class="footer-item about">
-            <h4><a href="/aboutMe.html">About</a></h4>
-            <ul>
-              <li><a href="/aboutMe.html">About Me</a></li>
-              <li><a href="/aboutMe2.html">My Career</a></li>
-              <li><a href="/aboutMe3.html">Venues</a></li>
-            </ul>
-            <h4><a href="/music.html">Music</a></h4>
-          </div>
-          <div id="footer-separator"></div>
-          <div class="footer-item school">
-            <h4>DJ School</h4>
-            <a href="/dj-school.html">Start Your Career</a>
-          </div>
-          <div id="footer-separator"></div>
-          <div class="footer-item contact">
-            <p>
-              <span>E-mail:</span
-              ><a href="https://www.gmail.com" target="_blank"
-                >georges.hayek@infinitbeats.com</a
-              >
-            </p>
-            <p>
-              <span>Phone Number:</span
-              ><a href="https://web.whatsapp.com/b" target="_blank"
-                >+971562750754</a
-              >
-            </p>
-          </div>
-        </div>
-      </footer>
     </main>
   </body>
 </html>
