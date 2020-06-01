@@ -466,7 +466,7 @@ a.animated-button.victoria-four:hover:after {
 }
 .slideshow-container {
   display: block;
-  height: 80vh;
+  height: 70vh;
   width: 100vw;
   margin-top: 50vh;
   transform: translateY(-50%);
