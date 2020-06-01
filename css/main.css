@@ -466,7 +466,7 @@ a.animated-button.victoria-four:hover:after {
 }
 .slideshow-container {
   display: block;
-  height: 500px;
+  height: 80vh;
   width: 100vw;
   margin-top: 50vh;
   transform: translateY(-50%);
@@ -1555,12 +1555,16 @@ a.animated-button.victoria-four:hover:after {
     display: none;
   }
   #div-content {
-    margin-top: -70px;
+    /* margin-top: -70px; */
     width: 100%;
   }
   #div-content p {
     width: 60%;
     margin-left: 20%;
+    margin-top: 10px;
+  }
+  .dots {
+    display: none;
   }
   #div-content h1 {
     margin-left: 20%;
@@ -1612,12 +1616,60 @@ a.animated-button.victoria-four:hover:after {
   #second-school p {
     padding-top: 100px;
   }
+  /* about */
+  #div-content h1 {
+    font-size: 2rem;
+  }
+  
+  #list-div h3 {
+    font-size: 1.5rem;
+  }
+  .div-ul li {
+    font-size: 0.8rem;
+  }
+  #div-content p{
+    font-size: 0.8rem;
+  }
+  #list-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr;
+    width: 80vw;
+    margin-left: -50px;
+  }
+  .list-1,
+  .list-2 {
+    display: block;
+    width: 200px;
+  }
+  
+  .list-3,
+  .list-4 {
+    display: inline-block;
+  }
+  .list-4 {
+    display: none;
+  }
+  
+  #arrow-right img {
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+  }
+  #arrow-left img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media all and (max-height: 414) {
+  
 }
 @media all and (max-width: 768px) {
   .mySlides {
     display: inline-block;
-    justify-content: center;
-    align-content: center;
+    /* justify-content: center; */
+    /* align-content: center; */
     height: 90%;
   }
 
@@ -1654,15 +1706,6 @@ a.animated-button.victoria-four:hover:after {
     font-size: 0.8rem !important;
   }
 
-  #arrow-right img {
-    width: 50px;
-    height: 50px;
-    margin-left: 50px;
-  }
-  #arrow-left img {
-    width: 50px;
-    height: 50px;
-  }
   /* dj school */
   #second-school p {
     padding-top: 50px;
@@ -1676,7 +1719,7 @@ a.animated-button.victoria-four:hover:after {
   .about {
     display: none;
   }
-  .left-footer-separator {
+  #footer-separator {
     display: none;
   }
   .footer-container {
@@ -1689,4 +1732,6 @@ a.animated-button.victoria-four:hover:after {
   .school h4 {
     display: none;
   }
+  .school a{
+    margin-right: 30px;
 }
