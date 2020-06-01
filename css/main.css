@@ -476,7 +476,7 @@ a.animated-button.victoria-four:hover:after {
   width: 70vw;
   height: 60vh;
   margin-left: 15vw;
-  margin-top: 60px;
+  margin-top: 30px;
   display: flex;
 }
 #div-content {
@@ -1620,14 +1620,14 @@ a.animated-button.victoria-four:hover:after {
   #div-content h1 {
     font-size: 2rem;
   }
-  
+
   #list-div h3 {
     font-size: 1.5rem;
   }
   .div-ul li {
     font-size: 0.8rem;
   }
-  #div-content p{
+  #div-content p {
     font-size: 0.8rem;
   }
   #list-div {
@@ -1642,7 +1642,7 @@ a.animated-button.victoria-four:hover:after {
     display: block;
     width: 200px;
   }
-  
+
   .list-3,
   .list-4 {
     display: inline-block;
@@ -1650,7 +1650,7 @@ a.animated-button.victoria-four:hover:after {
   .list-4 {
     display: none;
   }
-  
+
   #arrow-right img {
     width: 50px;
     height: 50px;
@@ -1660,11 +1660,11 @@ a.animated-button.victoria-four:hover:after {
     width: 50px;
     height: 50px;
   }
+  .div-h1 {
+    margin-left: -10px !important;
+  }
 }
 
-@media all and (max-height: 414) {
-  
-}
 @media all and (max-width: 768px) {
   .mySlides {
     display: inline-block;
@@ -1732,6 +1732,7 @@ a.animated-button.victoria-four:hover:after {
   .school h4 {
     display: none;
   }
-  .school a{
+  .school a {
     margin-right: 30px;
+  }
 }
