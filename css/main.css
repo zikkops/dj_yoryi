@@ -1666,6 +1666,29 @@ a.animated-button.victoria-four:hover:after {
 }
 
 @media all and (max-width: 768px) {
+  .list-1,
+  .list-2,
+  .list-3,
+  .list-4 {
+    display: inline;
+  }
+  #list-div {
+    display: block;
+  }
+
+  /* .list-1,
+  .list-2 {
+    margin-left: 77px;
+  } */
+  /* .div-h1 {
+    margin-left: 65px !important;
+    font-size: 2rem !important;
+  } */
+  /* .list-3,
+  .list-4 {
+    margin-left: -95px;
+  } */
+
   .mySlides {
     display: inline-block;
     /* justify-content: center; */
@@ -1698,8 +1721,12 @@ a.animated-button.victoria-four:hover:after {
   /* about me */
   .div-h1 {
     font-size: 1.4rem !important;
+    margin-left: 20% !important;
   }
   .div-h3 {
+    font-size: 1.1rem !important;
+  }
+  #div-content h3 {
     font-size: 1.1rem !important;
   }
   .div-ul {
