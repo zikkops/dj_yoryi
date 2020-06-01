@@ -1142,7 +1142,7 @@ a.animated-button.victoria-four:hover:after {
 #pointer-down {
   position: absolute;
   bottom: 20px;
-  left: 47%;
+  left: 43%;
 
   /* transform: translate(-50%); */
   animation: bounce 2s infinite 2s;
