@@ -12,6 +12,15 @@ body {
 #contact {
   overflow-y: auto;
 }
+#music-bd {
+  overflow: hidden;
+}
+#main-school {
+  overflow-y: auto;
+}
+#blur-container {
+  overflow: hidden;
+}
 .visable-container {
   display: block !important;
 }
