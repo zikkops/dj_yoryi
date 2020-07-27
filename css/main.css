@@ -915,6 +915,7 @@ a.animated-button.victoria-four:hover:after {
   width: 40vw;
   height: 388px;
   margin-right: 10vw;
+  padding-bottom: 50px;
 }
 #info h3 {
   color: white;
@@ -1111,7 +1112,8 @@ a.animated-button.victoria-four:hover:after {
 
 /* SCHOOL */
 #school {
-  overflow-y: auto;
+  overflow-x: none;
+  width: 100%;
 }
 #first-school {
   background: url("/img/school-bg.png") center center/cover;
