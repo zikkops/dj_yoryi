@@ -1,6 +1,6 @@
-var songs = ["/music/Song2.mp3", "/music/Song1.mp3", "/music/Song3.mp3"];
-var poster = ["Poster1.jpg", "Poster2.jpg", "Poster3.jpg"];
-var songsName = ["EDM", "Trance", "Dubstep"];
+var songs = ["/music/despacito.mp3", "/music/tunes.mp3"];
+var poster = ["Poster1.jpg", "Poster2.jpg"];
+var songsName = ["Despacito", "Tunes"];
 
 var songTitle = document.getElementById("songTitle");
 var fillBar = document.getElementById("fill");
