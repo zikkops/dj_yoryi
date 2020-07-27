@@ -242,7 +242,7 @@ a.animated-button.victoria-four:hover:after {
   color: white;
   font-size: 2rem;
   top: 0;
-  width: 120px;
+  width: 160px;
 }
 #dj-name {
   position: absolute;
@@ -1724,6 +1724,7 @@ a.animated-button.victoria-four:hover:after {
   }
   #buttons {
     text-align: center;
+    float: right;
   }
 
   #seek-bar {
