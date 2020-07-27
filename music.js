@@ -1,4 +1,4 @@
-var songs = ["/music/despacito.mp3", "/music/tunes.mp3"];
+var songs = ["/music/Song1.mp3", "/music/Song2.mp3"];
 var poster = ["Poster1.jpg", "Poster2.jpg"];
 var songsName = ["Despacito", "Tunes"];
 
@@ -42,7 +42,7 @@ song.addEventListener("timeupdate", function () {
 
 function next() {
   currentSong++;
-  if (currentSong > 2) {
+  if (currentSong > 1) {
     currentSong = 0;
   }
   playSong();
@@ -51,7 +51,7 @@ function next() {
 function pre() {
   currentSong--;
   if (currentSong < 0) {
-    currentSong = 2;
+    currentSong = 1;
   }
   playSong();
 }
